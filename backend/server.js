@@ -23,7 +23,7 @@ app.use("/api/login", loginRoutes);
 
 const PORT = process.env.PORT || 5000;
 
-// Probar conexión al iniciar
+
 getConnection()
   .then(() => {
     app.listen(PORT, () =>
