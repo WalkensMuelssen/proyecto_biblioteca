@@ -8,7 +8,7 @@ router.post("/", async (req, res) => {
 
   try {
     const pool = await getConnection();
-    // buscamos por correo o por nombre (case-insensitive simple)
+    // buscamos por correo o por nombre el usario en db
     const result = await pool.request()
       .input("user", sql.VarChar, user)
       .input("password", sql.VarChar, password)
