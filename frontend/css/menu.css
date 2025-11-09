@@ -9,7 +9,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: #4bb6b7; /* azul original */
+  background: #4bb6b7; 
   color: #fff;
   padding: 12px 20px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.08);
@@ -27,13 +27,13 @@ header {
   left: -250px;
   width: 250px;
   height: 100%;
-  background: #4bb6b7; /* azul original */
+  background: #4bb6b7; 
   border-right: none;
   transition: all 0.3s ease;
   padding-top: 40px;
   z-index: 100;
   box-shadow: 2px 0 10px rgba(0,0,0,0.15);
-  overflow-y: auto; /* permite scroll vertical */
+  overflow-y: auto; 
 }
 
 .sidebar.active {
@@ -44,7 +44,7 @@ header {
   list-style: none;
   padding: 0;
   margin: 0;
-  padding-bottom: 20px; /* margen inferior para que el último item no quede pegado */
+  padding-bottom: 20px; 
 }
 
 .sidebar ul li {
@@ -67,7 +67,7 @@ header {
 }
 
 .sidebar ul li a:hover {
-  background: #379d9f; /* azul original más oscuro */
+  background: #379d9f; 
   color: #fff;
 }
 
