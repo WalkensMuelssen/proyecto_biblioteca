@@ -3,7 +3,7 @@ import { getConnection, sql } from "../db.js";
 
 const router = express.Router();
 
-// Obtener todos los usuarios
+
 router.get("/", async (req, res) => {
   try {
     const pool = await getConnection();
