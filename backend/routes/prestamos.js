@@ -2,7 +2,7 @@ import express from "express";
 import { getConnection, sql } from "../db.js";
 const router = express.Router();
 
-// Listar préstamos (con info del usuario y libro)
+// Listar préstamos 
 router.get("/", async (req, res) => {
   try {
     const pool = await getConnection();
@@ -31,7 +31,7 @@ router.post("/", async (req, res) => {
   } catch (err) { res.status(500).json({error:'Error'}); }
 });
 
-// Devolver (PUT) — cambia estado y fecha_devolucion
+// Devolver — cambia estado y fecha_devolucion
 router.put("/:id", async (req, res) => {
   const id = parseInt(req.params.id, 10);
   try {
