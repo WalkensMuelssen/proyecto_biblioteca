@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Login - Biblioteca</title>
+    <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="container" id="container">
+        <div class="form-container register-container">
+            <form action="#">
+                <h1>Register here.</h1>
+                <!-- (deja el HTML de registro como estaba) -->
+            </form>
+        </div>
+        <div class="form-container login-container">
+            <form id="loginForm">
+                <h1>Iniciar sesión</h1>
+                <input type="text" id="loginUser" placeholder="Correo o nombre" />
+                <input type="password" id="loginPass" placeholder="Contraseña" />
+                <button type="submit">Entrar</button>
+            </form>
+        </div>
+        <div class="overlay-container">
+            <!-- overlay y botones (mantener diseño original) -->
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h1>Bienvenido</h1>
+                    <p>Inicia sesión con tu cuenta.</p>
+                    <button class="ghost" id="login">Login</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <h1>Regístrate</h1>
+                    <p>Si no tienes cuenta regístrate aquí.</p>
+                    <button class="ghost" id="register">Register</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- conecta login.js (nuevo) y conserva el script de animación si lo deseas -->
+    <script src="js/login.js"></script>
+    <!-- si tenías un script para animación, puedes mantenerlo aquí -->
+</body>
+</html>

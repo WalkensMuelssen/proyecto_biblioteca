@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Biblioteca Digital</title>
+  <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/menu.css">
+</head>
+<body>
+  <div id="overlay"></div>
+
+  <!-- HEADER -->
+  <header>
+    <div class="menu-btn" id="menu-btn">
+      <i class="lni lni-menu"></i>
+    </div>
+    <div id="welcome" style="padding:10px; font-weight:600;"></div>
+  </header>
+
+  <!-- SIDEBAR -->
+  <nav id="sidebar" class="sidebar">
+    <ul>
+      <li><a href="#" data-section="inicio"><i class="lni lni-home"></i>Inicio</a></li>
+      <li><a href="#" data-section="registrar"><i class="lni lni-plus"></i>Registrar libro</a></li>
+      <li><a href="#" data-section="consultar"><i class="lni lni-book"></i>Consultar libros</a></li>
+      <li><a href="#" data-section="usuarios"><i class="lni lni-users"></i>Usuarios</a></li>
+      <li><a href="#" data-section="prestamos"><i class="lni lni-download"></i>Préstamos</a></li>
+      <li><a href="#" data-section="reservas"><i class="lni lni-clock"></i>Reservas</a></li>
+      <li><a href="#" data-section="salir"><i class="lni lni-exit"></i>Salir</a></li>
+    </ul>
+  </nav>
+
+  <!-- CONTENIDO -->
+  <main id="content">
+    <h1>Bienvenido al sistema de biblioteca</h1>
+    <p>Selecciona una opción del menú para comenzar</p>
+  </main>
+
+  <!-- SCRIPT -->
+  <script src="js/menu.js"></script>
+</body>
+</html>
